@@ -1,0 +1,24 @@
+CREATING USING PROCEURAL PHP - MYSQLI
+
+Database name: - loginsystem
+
+CREATE TABLE users(
+    idUsers int(11) PRIMARY KEY AUTO_INCREMENT not null,
+    uidUsers TINYTEXT not null UNIQUE,
+    emailUsers TINYTEXT not null UNIQUE,
+    pwdUsers LONGTEXT not null
+);
+
+
+We have used MySqli Prepared statements here (MAIN), with Procedural.
+
+
+Table for forgotten password: - 
+
+CREATE TABLE pwdReset (
+    pwdResetId int(11) PRIMARY KEY AUTO_INCREMENT,
+    pwdResetEmail TEXT not null, /* store the email of the user who is trying to reser his password  */
+    pwdResetSelector TEXT not null, /* First token */
+    pwdResetToken LONGTEXT not null, /* Actual token to authenticate the user with */
+    pwdResetExpires TEXT not null
+);
