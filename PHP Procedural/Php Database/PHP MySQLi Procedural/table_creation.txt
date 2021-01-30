@@ -1,0 +1,28 @@
+DATABASE NAME IN phpMyAdmin = fidasystem
+
+--------------------------1st Table--------------------
+CREATE TABLE users (
+    user_id int(11) AUTO_INCREMENT PRIMARY KEY not null,
+    user_first varchar(256) not null,
+    user_last varchar(256) not null,
+    user_email varchar(256) not null UNIQUE,
+    user_uid varchar(256) not null UNIQUE,
+    user_pwd varchar(256) not null
+);
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) 
+VALUES ('Daniel','Nielson','jack@gmail.com', 'Admin', 'test123');
+
+
+
+///////////
+The UNIQUE constraint ensures that all values in a column are different.
+Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns.
+A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+
+
+///////////
+To create a UNIQUE constraint on the "user_email" column when the table is already created, use the following SQL:
+ALTER TABLE users
+ADD UNIQUE (user_email); 

@@ -1,0 +1,13 @@
+*--------------TABLE CREATION FOR DATABASE IN phpMyAdmin--------------
+table_creation.txt
+
+*------------------MYSQLI AND PHP-------------------
+1)connect.php = database connection
+2)form.php and functions.php(insert function) = insert data into table in database
+3)readDB.php = how to access data in database and spit it out (for various uses)
+4)updateForm.php and functions.php(upload,showAllData function) = upload data in table
+5)deleteForm.php and functions.php(delete function) = delete data in table
+#Includes - PHP Security(form validation,prevent mysqli injectiom,password hashing), Error Handling
+
+*-----------------PHP ARRAY AND DATABASE--------------
+arrayDB.php

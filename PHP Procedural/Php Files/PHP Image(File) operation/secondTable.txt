@@ -1,0 +1,8 @@
+/* link profile image to users */
+
+CREATE TABLE profileimg(
+    id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    /*id of user inside user table - we will link profile image to user*/
+    userid int(11) not null,
+    status int(11) not null /*set image status*/
+);

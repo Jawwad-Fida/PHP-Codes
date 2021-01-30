@@ -1,0 +1,14 @@
+CREATE TABLE article(
+    a_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    a_title varchar(256) not null,
+    a_text text not null, /* datatype = text (for infinite characters)*/
+    a_author varchar(256) not null,
+    a_data datetime not null
+);
+
+
+INSERT INTO article (a_title,a_text,a_author,a_date) 
+VALUES ('50 great summer recipes','There are many recipes you can create for summer which involves grilling, boiling, frying, and toasting','Admin','2017-11-25 12:23:11'); 
+
+INSERT INTO article (a_title,a_text,a_author,a_date) 
+VALUES ('A series of computer software','In this article, you will learn about some of the softwares used on computers. This involve basic software and more advanced software used by developers','Jawwad Fida','2019-08-17 15:35:42'); 

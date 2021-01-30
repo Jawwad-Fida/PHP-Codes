@@ -1,0 +1,13 @@
+----------------for index4.php (3rd method)---------------
+
+
+CREATE TABLE keystring(
+id int(11) not null PRIMARy KEY AUTO_INCREMENT,
+keystringKey varchar(256) not null
+);
+
+
+
+INSERT INTO keystring(keystringKey) VALUES('a');
+INSERT INTO keystring(keystringKey) VALUES('b');
+INSERT INTO keystring(keystringKey) VALUES('c');
