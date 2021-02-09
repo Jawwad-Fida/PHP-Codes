@@ -1,0 +1,26 @@
+================= GIT BASH ==================
+
+composer init (First time only)
+(Always)
+composer diagnose
+composer self-update
+composer update
+
+composer.json and composer.lock are created in project folder
+---------------------------------------------
+
+
+PHP Mailer and Mail Trap: - composer require phpmailer/phpmailer (check github)
+
+Pusher: - composer require pusher/pusher-php-server (check Github)
+
+Protecting credential .env file: - composer require vlucas/phpdotenv (check github)
+
+
+
+---------------------------
+
+========================= .gitignore file (basic requirements)
+/vendor/
+.idea
+.env

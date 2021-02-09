@@ -1,0 +1,5 @@
+Xampp -> phpMyadmin --> config.inc.php
+
+-->
+$cfg['Servers'][$i]['hide_db'] = '^(information_schema|mysql|performance_schema|test|phpmyadmin)$';
+$cfg['AllowUserDropDatabase'] = true;
